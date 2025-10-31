@@ -1,12 +1,12 @@
-import { SiGoogle, SiAmazon, SiOracle, SiSalesforce, SiMeta, SiNvidia } from 'react-icons/si';
+import { SiShopify, SiZendesk, SiMailchimp, SiAsana, SiTrello, SiNotion } from 'react-icons/si';
 
 const clients = [
-  { name: 'Meta', icon: SiMeta },
-  { name: 'Google', icon: SiGoogle },
-  { name: 'Amazon', icon: SiAmazon },
-  { name: 'NVIDIA', icon: SiNvidia },
-  { name: 'Oracle', icon: SiOracle },
-  { name: 'Salesforce', icon: SiSalesforce },
+  { name: 'Shopify', icon: SiShopify },
+  { name: 'Zendesk', icon: SiZendesk },
+  { name: 'Mailchimp', icon: SiMailchimp },
+  { name: 'Asana', icon: SiAsana },
+  { name: 'Trello', icon: SiTrello },
+  { name: 'Notion', icon: SiNotion },
 ];
 
 export default function Clients() {
