@@ -19,31 +19,31 @@ export default function Contact() {
   };
 
   return (
-    <section id="contact" className="py-24 px-4 sm:px-6 lg:px-8">
+    <section id="contact" className="py-20 px-4 sm:px-6 lg:px-8">
       <div className="max-w-7xl mx-auto">
-        <div className="text-center mb-16">
-          <h2 className="font-accent text-4xl sm:text-5xl font-bold mb-4 gradient-text" data-testid="text-contact-title">
+        <div className="text-center mb-12">
+          <h2 className="font-accent text-4xl sm:text-5xl font-bold mb-3 gradient-text" data-testid="text-contact-title">
             Get In Touch
           </h2>
-          <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+          <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
             Ready to start your next project? Contact us today
           </p>
         </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
           <div>
-            <Card className="glass-strong p-8 mb-8">
-              <h3 className="text-2xl font-bold mb-6">Contact Information</h3>
-              <div className="space-y-6">
-                <div className="flex items-start gap-4">
-                  <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center flex-shrink-0">
-                    <Phone className="w-6 h-6 text-primary" />
+            <Card className="glass-strong p-6 mb-6 border-border/50">
+              <h3 className="text-xl font-bold mb-5">Contact Information</h3>
+              <div className="space-y-5">
+                <div className="flex items-start gap-3">
+                  <div className="w-11 h-11 rounded-lg bg-primary/10 flex items-center justify-center flex-shrink-0">
+                    <Phone className="w-5 h-5 text-primary" />
                   </div>
                   <div>
-                    <p className="font-semibold mb-1">Phone</p>
+                    <p className="font-semibold mb-0.5 text-sm">Phone</p>
                     <a
                       href="tel:+923196931391"
-                      className="text-muted-foreground hover:text-primary transition-colors"
+                      className="text-muted-foreground hover:text-primary transition-colors text-sm"
                       data-testid="link-phone"
                     >
                       +92 319 6931391
@@ -51,15 +51,15 @@ export default function Contact() {
                   </div>
                 </div>
 
-                <div className="flex items-start gap-4">
-                  <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center flex-shrink-0">
-                    <Mail className="w-6 h-6 text-primary" />
+                <div className="flex items-start gap-3">
+                  <div className="w-11 h-11 rounded-lg bg-primary/10 flex items-center justify-center flex-shrink-0">
+                    <Mail className="w-5 h-5 text-primary" />
                   </div>
                   <div>
-                    <p className="font-semibold mb-1">Email</p>
+                    <p className="font-semibold mb-0.5 text-sm">Email</p>
                     <a
                       href="mailto:info@quantumdev.com"
-                      className="text-muted-foreground hover:text-primary transition-colors"
+                      className="text-muted-foreground hover:text-primary transition-colors text-sm"
                       data-testid="link-email"
                     >
                       info@quantumdev.com
@@ -67,13 +67,13 @@ export default function Contact() {
                   </div>
                 </div>
 
-                <div className="flex items-start gap-4">
-                  <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center flex-shrink-0">
-                    <MapPin className="w-6 h-6 text-primary" />
+                <div className="flex items-start gap-3">
+                  <div className="w-11 h-11 rounded-lg bg-primary/10 flex items-center justify-center flex-shrink-0">
+                    <MapPin className="w-5 h-5 text-primary" />
                   </div>
                   <div>
-                    <p className="font-semibold mb-1">Location</p>
-                    <p className="text-muted-foreground">
+                    <p className="font-semibold mb-0.5 text-sm">Location</p>
+                    <p className="text-muted-foreground text-sm">
                       Pakistan<br />
                       Serving clients across Asia
                     </p>
@@ -82,8 +82,8 @@ export default function Contact() {
               </div>
             </Card>
 
-            <Card className="glass p-6">
-              <h3 className="text-xl font-bold mb-4">Business Hours</h3>
+            <Card className="glass p-5 border-border/50">
+              <h3 className="text-lg font-bold mb-3">Business Hours</h3>
               <div className="space-y-2 text-sm">
                 <div className="flex justify-between">
                   <span className="text-muted-foreground">Monday - Friday</span>
@@ -101,9 +101,9 @@ export default function Contact() {
             </Card>
           </div>
 
-          <Card className="glass-strong p-8">
-            <h3 className="text-2xl font-bold mb-6">Send Us a Message</h3>
-            <form onSubmit={handleSubmit} className="space-y-6">
+          <Card className="glass-strong p-6 border-border/50">
+            <h3 className="text-xl font-bold mb-5">Send Us a Message</h3>
+            <form onSubmit={handleSubmit} className="space-y-5">
               <div>
                 <label htmlFor="name" className="block text-sm font-medium mb-2">
                   Name

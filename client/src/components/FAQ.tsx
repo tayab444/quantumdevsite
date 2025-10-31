@@ -42,25 +42,25 @@ const faqs = [
 
 export default function FAQ() {
   return (
-    <section id="faq" className="py-24 px-4 sm:px-6 lg:px-8 bg-muted/30">
+    <section id="faq" className="py-20 px-4 sm:px-6 lg:px-8 bg-muted/20">
       <div className="max-w-4xl mx-auto">
-        <div className="text-center mb-16">
-          <h2 className="font-accent text-4xl sm:text-5xl font-bold mb-4 gradient-text" data-testid="text-faq-title">
+        <div className="text-center mb-12">
+          <h2 className="font-accent text-4xl sm:text-5xl font-bold mb-3 gradient-text" data-testid="text-faq-title">
             Frequently Asked Questions
           </h2>
-          <p className="text-xl text-muted-foreground">
+          <p className="text-lg text-muted-foreground">
             Everything you need to know about working with QuantumDev
           </p>
         </div>
 
-        <div className="glass-strong p-8 rounded-2xl">
-          <Accordion type="single" collapsible className="space-y-4" data-testid="accordion-faq">
+        <div className="glass-strong p-6 rounded-2xl border-border/50">
+          <Accordion type="single" collapsible className="space-y-3" data-testid="accordion-faq">
             {faqs.map((faq, index) => (
-              <AccordionItem key={index} value={`item-${index}`} className="border-b border-border/50 last:border-0">
-                <AccordionTrigger className="text-left hover:no-underline hover-elevate px-4 rounded-md" data-testid={`button-faq-${index}`}>
+              <AccordionItem key={index} value={`item-${index}`} className="border-b border-border/40 last:border-0">
+                <AccordionTrigger className="text-left hover:no-underline hover-elevate px-3 py-3 rounded-md text-sm" data-testid={`button-faq-${index}`}>
                   <span className="font-semibold">{faq.question}</span>
                 </AccordionTrigger>
-                <AccordionContent className="px-4 pt-2 pb-4 text-muted-foreground">
+                <AccordionContent className="px-3 pt-1 pb-3 text-muted-foreground text-sm leading-relaxed">
                   {faq.answer}
                 </AccordionContent>
               </AccordionItem>

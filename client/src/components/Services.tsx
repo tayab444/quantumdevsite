@@ -31,35 +31,35 @@ const services = [
 
 export default function Services() {
   return (
-    <section id="services" className="py-24 px-4 sm:px-6 lg:px-8">
+    <section id="services" className="py-20 px-4 sm:px-6 lg:px-8">
       <div className="max-w-7xl mx-auto">
-        <div className="text-center mb-16">
-          <h2 className="font-accent text-4xl sm:text-5xl font-bold mb-4 gradient-text" data-testid="text-services-title">
+        <div className="text-center mb-12">
+          <h2 className="font-accent text-4xl sm:text-5xl font-bold mb-3 gradient-text" data-testid="text-services-title">
             Our Services
           </h2>
-          <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+          <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
             Comprehensive technology solutions to power your digital transformation
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
           {services.map((service, index) => {
             const Icon = service.icon;
             return (
               <Card
                 key={index}
-                className="glass p-8 hover-elevate active-elevate-2 cursor-pointer transition-all duration-300 group overflow-visible"
+                className="glass p-6 hover-elevate active-elevate-2 cursor-pointer transition-all duration-300 group overflow-visible border-border/50"
                 data-testid={`card-service-${index}`}
               >
-                <div className="mb-6">
-                  <div className="w-14 h-14 rounded-lg bg-primary/10 flex items-center justify-center group-hover:bg-primary/20 transition-colors">
-                    <Icon className="w-7 h-7 text-primary" />
+                <div className="mb-4">
+                  <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center group-hover:bg-primary/20 transition-colors">
+                    <Icon className="w-6 h-6 text-primary" />
                   </div>
                 </div>
-                <h3 className="text-xl font-bold mb-3" data-testid={`text-service-title-${index}`}>
+                <h3 className="text-lg font-bold mb-2" data-testid={`text-service-title-${index}`}>
                   {service.title}
                 </h3>
-                <p className="text-muted-foreground leading-relaxed">
+                <p className="text-muted-foreground text-sm leading-relaxed">
                   {service.description}
                 </p>
               </Card>

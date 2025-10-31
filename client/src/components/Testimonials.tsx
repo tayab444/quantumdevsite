@@ -46,40 +46,40 @@ export default function Testimonials() {
   };
 
   return (
-    <section className="py-24 px-4 sm:px-6 lg:px-8">
+    <section className="py-20 px-4 sm:px-6 lg:px-8">
       <div className="max-w-7xl mx-auto">
-        <div className="text-center mb-16">
-          <h2 className="font-accent text-4xl sm:text-5xl font-bold mb-4 gradient-text" data-testid="text-testimonials-title">
+        <div className="text-center mb-12">
+          <h2 className="font-accent text-4xl sm:text-5xl font-bold mb-3 gradient-text" data-testid="text-testimonials-title">
             Client Testimonials
           </h2>
-          <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+          <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
             What our clients say about working with us
           </p>
         </div>
 
         <div className="relative max-w-4xl mx-auto">
-          <Card className="glass-strong p-8 md:p-12">
-            <Quote className="w-12 h-12 text-primary/30 mb-6" />
-            <div className="min-h-[200px] flex flex-col justify-center">
-              <p className="text-lg md:text-xl mb-6 leading-relaxed" data-testid="text-testimonial-content">
+          <Card className="glass-strong p-8 md:p-10 border-border/50">
+            <Quote className="w-10 h-10 text-primary/30 mb-5" />
+            <div className="min-h-[180px] flex flex-col justify-center">
+              <p className="text-base md:text-lg mb-5 leading-relaxed" data-testid="text-testimonial-content">
                 {testimonials[currentIndex].content}
               </p>
               <div>
-                <p className="font-bold text-lg" data-testid="text-testimonial-name">{testimonials[currentIndex].name}</p>
-                <p className="text-muted-foreground">{testimonials[currentIndex].role}</p>
+                <p className="font-bold text-base" data-testid="text-testimonial-name">{testimonials[currentIndex].name}</p>
+                <p className="text-muted-foreground text-sm">{testimonials[currentIndex].role}</p>
               </div>
             </div>
           </Card>
 
-          <div className="flex items-center justify-center gap-4 mt-8">
+          <div className="flex items-center justify-center gap-3 mt-6">
             <Button
               variant="outline"
               size="icon"
               onClick={goToPrevious}
-              className="glass"
+              className="glass border-border/50"
               data-testid="button-testimonial-prev"
             >
-              <ChevronLeft className="w-5 h-5" />
+              <ChevronLeft className="w-4 h-4" />
             </Button>
             
             <div className="flex gap-2">
@@ -87,8 +87,8 @@ export default function Testimonials() {
                 <button
                   key={index}
                   onClick={() => setCurrentIndex(index)}
-                  className={`w-2 h-2 rounded-full transition-all ${
-                    index === currentIndex ? 'bg-primary w-8' : 'bg-muted-foreground/30'
+                  className={`w-1.5 h-1.5 rounded-full transition-all ${
+                    index === currentIndex ? 'bg-primary w-6' : 'bg-muted-foreground/30'
                   }`}
                   data-testid={`button-testimonial-dot-${index}`}
                 />
@@ -99,10 +99,10 @@ export default function Testimonials() {
               variant="outline"
               size="icon"
               onClick={goToNext}
-              className="glass"
+              className="glass border-border/50"
               data-testid="button-testimonial-next"
             >
-              <ChevronRight className="w-5 h-5" />
+              <ChevronRight className="w-4 h-4" />
             </Button>
           </div>
         </div>
